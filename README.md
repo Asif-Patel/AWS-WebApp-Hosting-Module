@@ -78,7 +78,7 @@ Resource Name | Qty | Resource Name | Qty | Resource Name | Qty
 ---
 ## License & copywrite
 
-© Asif Patel, AWS DevOps Engineer
+- © Asif Patel, AWS DevOps Engineer
 ---
 
 > Thank you so much for your time !!!
