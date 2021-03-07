@@ -7,12 +7,13 @@ Hi from Asif,
 This is the asignment project of simple Web-App hosting on AWS cloud platform using terraform.
 In this assignment we are deploying a highly available and in-control infrastructure to run in backend. Which will provide us a robust design ready to deploy on any AWS account. You just have to maintaine the below listed pre-requisites and it will boom in the end with the end-point URL for the WebApp page.
 
+```
 In the end thos deployment provide us;
 * A Robust, Highly Available, In-Control AWS Infrastructure
 * An ALB Endpoint URL
 * An email in your mailbox for SNS subscription
-* A WebPage redirecting to that URL
-* A AWS-Architecture Design used for this assignment
+* A WebPage with AWS-Architecture Design used for this assignment
+```
 
 ---
 ## Pre-requisites before applying changes
