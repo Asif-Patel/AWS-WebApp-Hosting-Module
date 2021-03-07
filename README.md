@@ -53,16 +53,16 @@ I have choosen the AWS Standalone Architecture to go for this assignment which w
 
 
 ---
-## Resources to be created
+## Resources to be created as a part of deployment:
 
 Resource Name | Qty | Resource Name | Qty | Resource Name | Qty
 --- | --- | --- | --- | --- | ---
-*VPC* | *1* || *IAM Role* | *1* || *LB Target Group* | *1*
-*Public-Subnet* | *2* || *Security Groups* | *2* || *TLS Cert* | *optional*
-*Private-Subnet* | *2* || *Launch Config* | *1* || *SNS Topic* | *1*
-*Route Table* | *2* || *AutoScaling Group* | *1* || *SNS Subscriptions* | *2*
-*IGW* | *1* || *EC2* | *1* || *ASG Healthcheck Monitor * | *1*
-*NAT Gateway* | *1* || *Application LB* | *1* || *ALB End-URL Monitor* | *1*
+*VPC* | *1* | *IAM Role* | *1* | *LB Target Group* | *1*
+*Public-Subnet* | *2* | *Security Groups* | *2* | *TLS Cert* | *optional*
+*Private-Subnet* | *2* | *Launch Config* | *1* | *SNS Topic* | *1*
+*Route Table* | *2* | *AutoScaling Group* | *1* | *SNS Subscriptions* | *2*
+*IGW* | *1* | *EC2* | *1* | *ASG Healthcheck Monitor * | *1*
+*NAT Gateway* | *1* | *Application LB* | *1* | *ALB End-URL Monitor* | *1*
 
 ---
 ## Contributor
@@ -74,3 +74,6 @@ Resource Name | Qty | Resource Name | Qty | Resource Name | Qty
 
 - © Asif Patel, AWS DevOps Engineer
 ---
+
+Thank you so much for your time !!!
+See you soon !
