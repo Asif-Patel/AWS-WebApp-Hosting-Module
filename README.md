@@ -2,14 +2,17 @@
 
 **Version: v1.0**
 
+Hi from Asif,
+
 This is the asignment project of simple Web-App hosting on AWS cloud platform using terraform.
 In this assignment we are deploying a highly available and in-control infrastructure to run in backend. Which will provide us a robust design ready to deploy on any AWS account. You just have to maintaine the below listed pre-requisites and it will boom in the end with the end-point URL for the WebApp page.
 
 In the end thos deployment provide us;
-...* A Robust, Highly Available, In-Control AWS Infrastructure
-...* An ALB Endpoint URL
-...* A WebPage redirecting to that URL
-...* A AWS-Architecture Design used for this assignment
+* A Robust, Highly Available, In-Control AWS Infrastructure
+* An ALB Endpoint URL
+* An email in your mailbox for SNS subscription
+* A WebPage redirecting to that URL
+* A AWS-Architecture Design used for this assignment
 
 ---
 ## Pre-requisites before applying changes
@@ -17,6 +20,8 @@ In the end thos deployment provide us;
 > Provide your user credentials to terraform before deployment
 
 > The code was build with 0.14.7 (v14) version of Terraform which is compatible with mentioned v12
+
+> Probably you will receive an email from AWS for SNS subscription which will in future give you Monitoring alerts
 
 ---
 ## Design Considerations
@@ -53,15 +58,15 @@ I have choosen the AWS Standalone Architecture to go for this assignment which w
 
 
 ---
-## Resources to be created as a part of deployment:
+## AWS Resources to be created
 
 Resource Name | Qty | Resource Name | Qty | Resource Name | Qty
 --- | --- | --- | --- | --- | ---
-*VPC* | *1* | *IAM Role* | *1* | *LB Target Group* | *1*
-*Public-Subnet* | *2* | *Security Groups* | *2* | *TLS Cert* | *optional*
+*VPC* | *1* | *IAM Role* | *1* | *LB Listner* | *1*
+*Public-Subnet* | *2* | *Security Groups* | *2* | *LB Target Group* | *1*
 *Private-Subnet* | *2* | *Launch Config* | *1* | *SNS Topic* | *1*
 *Route Table* | *2* | *AutoScaling Group* | *1* | *SNS Subscriptions* | *2*
-*IGW* | *1* | *EC2* | *1* | *ASG Healthcheck Monitor * | *1*
+*IGW* | *1* | *EC2* | *1* | *ASG Healthcheck Monitor* | *1*
 *NAT Gateway* | *1* | *Application LB* | *1* | *ALB End-URL Monitor* | *1*
 
 ---
