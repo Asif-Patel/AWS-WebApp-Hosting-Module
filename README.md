@@ -73,7 +73,7 @@ Resource Name | Qty | Resource Name | Qty | Resource Name | Qty
 ---
 ## Contributor
 
-- Asif Alam Patel <patelasif8600@gmail.com>
+- Asif Alam Patel --> <patelasif8600@gmail.com>
 
 ---
 ## License & copywrite
