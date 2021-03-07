@@ -35,7 +35,7 @@ I have chosen the AWS Standalone Infra Architecture to go for this assignment wh
 
 * **VPC Scaling/Growth :** I have taken a CIDR range of `/24` which is provide 256 IPs for allocation. Out of these 265 IPs, I have given the range of `/26` for each Public Subnet and `/27` for each Private Subnet. As my design is having 2 Public and 2 Private subnets so it will obtain total 192 IPs in combain and we will still have `64` IPs unallocated for future growth or scaling.*
 
-* **WEB Server - AMI :** I have chosen a Linux AMI and used the AWS Managed Value from `AWS-SSM Parameter Store`. I have pulled the value from the records and assigned it in the Launch Configuration which will provide us the `Latest AMI Id from AWS Market Place`.
+* **WEB Server - AMI :** I have chosen a Linux AMI and used the AWS Managed Value from `AWS-SSM Parameter Store`. I have pulled the value from the records and assigned it in the Launch Configuration which will provide us the `Latest AMI Id from AWS Market Place`. Also I choose `t3.small` as we have minimal requirment of RAM and CPU for our web-application. We can even choose the free-tier t2.small but the t2 types arr no-longer supported by AWS in future, hence selected t3 instead of t2.
 
 * **WEB Server - SSH Access :** As its mentioned explicit in requirments, I have not provided any kind of `SSH_Key` or `tcp:22` traffic to SSH inside the server. Rather, I choose to manage the EC2 server with `AWS Systems Manager`. I have attached a EC2-IAM-Role to the server which is allow SSM access to the EC2 server along with SSMInstanceRole policy. So that we can manage our EC2 server remotely from SSM without SSH to it.
 
